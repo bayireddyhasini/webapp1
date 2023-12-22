@@ -5,7 +5,7 @@
 
     <groupId>com.example</groupId>
     <artifactId>mywebapp</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.1</version>
     <packaging>war</packaging>
 
 	<properties>
@@ -13,6 +13,17 @@
 		<sonar.host.url>http://3.87.6.157:9000/</sonar.host.url>
 
 	</properties>
+	<distributionManagement>
+		 <snapshotRepository>
+		    <id>nexusRepo</id>
+		    <url>http://34.227.94.46:8081/repository/batch12-snapshot/</url>
+		 </snapshotRepository>
+		
+		<repository>
+		    <id>nexusRepo</id>
+		    <url>http://34.227.94.46:8081/repository/batch12-release/</url>
+		</repository>
+  	</distributionManagement>
     
     <build>
         <plugins>
